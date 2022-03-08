@@ -251,8 +251,13 @@ public enum SpelMessage {
 	MISSING_SELECTION_EXPRESSION(Kind.ERROR, 1071,
 			"A required selection expression has not been specified"),
 
-	EXCEPTION_RUNNING_COMPILED_EXPRESSION(Kind.ERROR,1072,
-			"An exception occurred whilst evaluating a compiled expression");
+	/** @since 4.1 */
+	EXCEPTION_RUNNING_COMPILED_EXPRESSION(Kind.ERROR, 1072,
+			"An exception occurred whilst evaluating a compiled expression"),
+
+	/** @since 5.3.17 */
+	MAX_ARRAY_ELEMENTS_THRESHOLD_EXCEEDED(Kind.ERROR, 1075,
+			"Array declares too many elements, exceeding the threshold of ''{0}''");
 
 
 	private final Kind kind;
